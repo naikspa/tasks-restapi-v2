@@ -1,0 +1,33 @@
+GET http://localhost:3000/api/tasks
+
+###
+
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Tarea 1",
+    "description": "Hecha con mi propio sistema de tareas",
+    "done": true
+}
+
+###
+
+GET http://localhost:3000/api/tasks/63eb05b12b5e093def517d8a
+
+###
+
+DELETE http://localhost:3000/api/tasks/63eb05b02b5e093def517d89 
+
+###
+
+GET http://localhost:3000/api/tasks/done
+
+###
+
+PUT http://localhost:3000/api/tasks/63eb05b12b5e093def517d8b
+Content-Type: application/json
+
+{
+    "title": "Crear un sitio web en wix"
+}
